@@ -39,25 +39,45 @@ y genera un informe de buenas prácticas.
 ## Arquitectura del Proyecto
 
 FortiLab-GNS3/
+
 ├── lab/
+
 │   ├── topologia.gnsproject      # Proyecto GNS3 exportado
+
 │   ├── fortigate-base.conf       # Configuración inicial
+
 │   └── fortigate-segura.conf     # Políticas endurecidas
+
 ├── backend/
+
 │   ├── main.py                   # API FastAPI
+
 │   └── rules/
+
 │       ├── policies.py           # Reglas de políticas de firewall
+
 │       └── management.py         # Reglas de administración y acceso
+
 ├── frontend/
+
 │   ├── index.html                # Subida de archivo y resultados
+
 │   ├── styles.css
+
 │   └── app.js
+
 ├── docs/
+
 │   ├── guia-laboratorio.md       # Pasos para armar el lab
+
 │   └── direccionamiento.md       # Tabla de IPs y zonas
+
 ├── tests/
+
 │   └── test_rules.py             # Pruebas con pytest
+
 ├── requirements.txt
+
 └── README.md
 
 ---
